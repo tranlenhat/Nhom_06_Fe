@@ -1,0 +1,161 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.login_box {
+  background-image: url(../IMG/background_end.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_login {
+  width: 400px;
+  padding: 30px 25px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Logo */
+.logo_login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo_login img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Input */
+.form_tk_mk {
+  margin-bottom: 20px;
+}
+
+.form_tk_mk input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form_tk_mk input:focus {
+  border-color: #f6b11a;
+  box-shadow: 0 0 6px rgba(246, 177, 26, 0.5);
+}
+
+/* Nút đăng nhập */
+#login_box {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #f6b11a, #ff8800);
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#login_box:hover {
+  background: linear-gradient(90deg, #ff8800, #f6b11a);
+  transform: translateY(-2px);
+}
+
+/* Quên mật khẩu */
+.box_forget_password {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.box_forget_password span {
+  cursor: pointer;
+}
+
+.box_forget_password span:hover {
+  text-decoration: underline;
+  color: #ff8800;
+}
+
+/* Hoặc */
+.box_or {
+  margin: 15px 0;
+  color: #aaa;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+}
+
+.box_or::before,
+.box_or::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+
+.box_or::before {
+  left: 0;
+}
+
+.box_or::after {
+  right: 0;
+}
+
+/* Facebook / Google */
+.box_fb_google {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.box_login_facebook,
+.box_login_google {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.box_login_facebook {
+  background-color: #1877f2;
+}
+
+.box_login_facebook:hover {
+  background-color: #0d65d9;
+}
+
+.box_login_google {
+  background-color: #db4437;
+}
+
+.box_login_google:hover {
+  background-color: #b23121;
+}
