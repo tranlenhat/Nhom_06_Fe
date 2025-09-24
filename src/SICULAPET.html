@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SICULA PET</title>
+    <link rel="stylesheet" href="CSS/SICULAPET.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+</head>
+<body>
+<!-- Thanh menu -->
+    <div class="header_menu">
+        <a class="logo" href="#">
+            <img src="IMG/pet.png" alt="">
+        </a>
+        <div class="search">
+            <input type="text" name="" id="" placeholder="Tìm kiếm trên Chợ Pet ?">
+        </div>
+        <div class="contact">
+            <div class="contact_box">
+                    <div class="contact_item"><a class="ti-calendar"></a></div>
+                    <h> Tin Tức</h>
+            </div>
+            <div class="contact_box">
+                    <div class="contact_item"><a class="ti-write"></a> </div>
+                    <h> Đăng Tin </h>
+            </div>
+            <div class="contact_box" >
+                    <div class="contact_item"> <a class="ti-user" href="login.html"></a></div>
+                    <h> Đăng Nhập </h>
+            </div>
+        </div>
+    </div>
+<!-- Hình ảnh content AND Menu choice  -->
+<div class="Drop_Menu">
+    <div class="dropdown">
+    <button class="dropbtn">Chó</button>
+        <div class="dropdown-content">  
+            <div class="row">
+                <div class="column">
+                    <div class="column_left">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    <div class="column_right">
+                        <h3>CHÓ</h3>
+                        <div class="content_choice">
+                            <li><a href="content_chopug.html">Chó Pug</a></li>
+                            <li><a href="content_chopoodle.html">Chó Poodle</a></li>
+                            <li><a href="content_choalaska.html">Chó Alaska</a></li>
+                            <li><a href="content_chonhat.html">Chó Nhật</a></li>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">Mèo</button>
+        <div class="dropdown-content">  
+            <div class="row">
+                <div class="column">
+                    <div class="column_left">
+                        <img src="https://maunailxinh.com/wp-content/uploads/2025/05/anh-meo-gian-cute-1.jpg" alt="">
+                    </div>
+                    <div class="column_right">
+                        <h3>MÈO</h3>
+                        <div class="content_choice">
+                            <li><a href="content_meobatu.html">Mèo Ba Tư</a></li>
+                            <li><a href="content_meoxiem.html">Mèo Xiêm</a></li>
+                            <li><a href="content_meosphynx.html">Mèo Sphynx không lông</a></li>
+                            <li><a href="content_meomuop.html">Mèo Mướp</a></li>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+    <button class="dropbtn">Cá</button>
+        <div class="dropdown-content">  
+            <div class="row">
+                <div class="column">
+                    <div class="column_left">
+                        <img src="https://pos.nvncdn.com/a7f3d4-30346/art/artCT/20210706_JQ7PBlEsRNR64RnBFBRHeQKy.png" alt="">
+                    </div>
+                    <div class="column_right">
+                        <h3>CÁ</h3>
+                        <div class="content_choice">
+                            <li><a href="content_caneon.html">Cá Neon</a></li>
+                            <li><a href="content_catetraxanh.html">Cá Tetra Xanh</a></li>
+                            <li><a href="content_cabaymau.html">Cá Bảy Màu</a></li>
+                            <li><a href="content_cabetta.html">Cá Betta</a></li>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+    <button class="dropbtn">Chim</button>
+        <div class="dropdown-content">  
+            <div class="row">
+                <div class="column">
+                    <div class="column_left">
+                        <img src="https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    </div>
+                    <div class="column_right">
+                        <h3>CHIM</h3>
+                        <div class="content_choice">
+                            <li><a href="content_chimsao.html">Chim Sáo</a></li>
+                            <li><a href="content_chimhoami.html">Chim Họa Mi</a></li>
+                            <li><a href="content_chimvet.html">Chim Vẹt</a></li>
+                            <li><a href="content_chimkhuyen.html">Chim Khuyên</a></li>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+    <button class="dropbtn">Thú Cưng Khác</button>
+        <div class="dropdown-content">  
+            <div class="row">
+                <div class="column">
+                    <div class="column_left">
+                        <img src="https://i.ytimg.com/vi/5b8LwN9ackU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGEgZSgdMA8=&rs=AOn4CLC6r_LE4e04iTaGFm0JkeuGdM7lAQ" alt="">
+                    </div>
+                    <div class="column_right">
+                        <h3>THÚ CƯNG KHÁC</h3>
+                        <div class="content_choice">
+                            <li><a  href="content_chuot.html">Chuột Hamster</a></li>
+                            <li><a href="content_tho.html">Thỏ</a></li>
+                            <li><a href="content_nhim.html">Nhím</a></li>
+                            <li><a href="content_soc.html">Sóc </a></li>                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+ <!--  eND-->
+            <div class="banner_content">
+                <img src="img/BANNER.jpg" alt="">
+            </div>
+         
+<!-- Danh mục chức năng -->
+            <div class="listpet">
+
+                <h3> DANH MỤC THÚ CƯNG </h3>
+
+                <div class="menu-grid-table">
+                    <a class="menu-grid" href="Buy_Pet.html">
+                        <img src="img/pet1.png" alt="">
+                        <h> Mua Bán Thú Cưng </h>
+                    </a>
+                    <a class="menu-grid" href="#" >
+                        <img src="img/pet2.png" alt="">
+                        <h> Phối giống cho thú </h>
+                    </a>
+                    <a class="menu-grid" href="Pet_Shop.html">
+                        <img src="img/pet3.png" alt="">
+                        <h> Thú Y gần bạn </h>
+                    </a>
+                    <a class="menu-grid" href="#">
+                        <img src="img/pet4.png" alt="">
+                        <h> Cộng Đồng yêu thú </h>
+                    </a>
+
+                    <a class="menu-grid" href="Camnang.html">
+                        <img src="img/pet5.png" alt="">
+                        <h> Cẩm nang thú cưng </h>
+                    </a>
+                    <a class="menu-grid" href="#" >
+                        <img src="img/pet6.png" alt="">
+                        <h> Sản phẩm và dịch vụ </h>
+                    </a>
+                    <a class="menu-grid" href="#">
+                        <img src="img/pet7.png" alt="">
+                        <h> Sự kiện khuyến mãi </h>
+                    </a>
+                    <a class="menu-grid" href="#" >
+                        <img src="img/pet8.png" alt="">
+                        <h> Mua Bán Thú Cưng </h>
+                    </a>
+                    <a class="menu-grid" href="Search_Information.html">
+                        <img src="img/pet9.png" alt="">
+                        <h> Tra cứu thông tin </h>
+                    </a>
+                    <a class="menu-grid" href="#">
+                        <img src="img/pet10.png" alt="">
+                        <h> Bảng giá chó mèo </h>
+                    </a>
+                </div>
+            </div>
+<!-- Slide show Quảng Cáo -->
+            <div id="slideshow">
+                <div class="slide-next">
+                    <div class="slide"><img src="IMG/slide_show1.jpg"></div>
+                    <div class="slide"><img src="IMG/Slide_show2.jpg"></div>
+                    <div class="slide"><img src="IMG/slide_show3.jpg"></div>
+                     <div class="slide"><img src="IMG/slide_show4.jpg"></div>
+                </div> 
+            </div>
+
+        <div class="new_top">
+            <div class="title_page">
+                <h3> Tin rao nổi bật </h3>
+            </div>
+
+        <div class="feednew">
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/Shiba.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Shiba tìm chủ  </h>
+                        <span class="post_type_price"> 8.000.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div>  
+           <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/Alaska.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Alaska bé cún  </h>
+                        <span class="post_type_price"> 5.999.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/Gau_Dan.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> GauDan nâu  </h>
+                        <span class="post_type_price"> 11.699.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/poodle.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Ba bé poodle xinh xẻo </h>
+                        <span class="post_type_price"> 2.000.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/Poodle_cow.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Poddle bò sữa  </h>
+                        <span class="post_type_price"> 3.500.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/Samoyed.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Alaska trắng nõn nà  </h>
+                        <span class="post_type_price"> 2.199.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/shiba_thuanchung.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Shiba thuần chủng  </h>
+                        <span class="post_type_price"> 6.000.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/Frednchobulldog.webp" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Poddle trắng  </h>
+                        <span class="post_type_price"> 1.200.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/Corgir.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Corgi chân ngắn thuần chủng  </h>
+                        <span class="post_type_price"> 1.599.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+            <div class="feed_item">  
+                <div class="title_img">
+                    <img src="IMG/ALASKA_WHITE.jpg" alt="">
+                </div>
+                    <div class="title_box">
+                        <span class="post_type_title"> [Bán]</span>
+                        <h class="title"> Alaska tìm chủ nuôi  </h>
+                        <span class="post_type_price"> 3.000.000 vnd</span>
+                        <h class="title_address"><i class="ti-user"></i>Tp. Đà Nẵng</h>
+                    </div>
+            </div> 
+        </div>
+
+       <div class="footer_pet">
+           <div class="footer_contact">
+                <div class="contact_box_center">
+                    <div class="item">
+                        <h3>TẢI ỨNG DỤNG CHỢ PET</h3>
+                        <img src="img/qr_code.png" alt="">
+                    </div>
+                    <div class="item">
+                        <div class="item_h">
+                            <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                                <h4>Liên hệ hỗ trợ</h4> <br>
+                                <h4>Những câu hỏi thường gặp</h4> <br>
+                                <h4>Chính sách bảo mật thông tin</h4> <br>
+                                <h4>Cơ chế kiếu nại</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_h">
+                            <h3>VỀ CHÚNG TÔI</h3>
+                                <h4>Giới Thiệu</h4> <br>
+                                <h4>Tuyển dụng</h4> <br>
+                                <h4>Quy chế hoạt động</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item_h">
+                            <h3>LIỆN HỆ</h3>
+                                <h class="ti-angle-down"></h>
+
+                        </div>
+                    </div>
+                </div>
+                <span> Master page </span>
+                <span> kết</span>
+            </div>
+            <div class="footer_address">
+               <div class="address_box_center">
+                   <span>CÔNG TY TNHH DỊCH VỤ THÚ CƯNG CHOPET VIỆT NAM - Địa chỉ: Phòng 211 - Tòa F, 120 Hoàng Minh Thảo, Hòa Khánh Nam, Liên Chiểu, Đà Nẵng</span> <br>
+                   <span>Giấy ĐKKD số: 0315707307 do Sở Kế hoạch và Đầu tư TP.HCM cấp lần đầu ngày 29/05/2019</span> <br>
+                   <span>Email: hotro@chopet.vn - Đường dây nóng: 19002172</span>
+               </div>
+           </div> 
+           </div>
+           
+</body>
+</html>
